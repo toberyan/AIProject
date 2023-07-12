@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option objc_class_prefix = "Abstract";
+
+service Parser {
+    rpc Ping (PingReq) returns (PingRes) {}
+}
+
+message PingReq {
+    string text = 1;
+}
+
+message PingRes {
+    string text = 1;
+}
